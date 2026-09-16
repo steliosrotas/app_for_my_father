@@ -333,7 +333,7 @@ while (i < len(img)-9):
             root.mainloop()
             data = text1
             file_n = data
-            fold_dir = os.path.join('./', "folder", file_n)
+            fold_dir = os.path.join(folder_dir, "output_" + file_n)
             if ((not fold_dir.endswith(filetype))):
                 fold_dir = fold_dir + filetype
             if fold_dir in img:
